@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set the background color of the body */
+body {
+  background-image: url("https://images.unsplash.com/photo-1605803388133-89e80a8ca35b");
+  background-size: cover;
+  background-color: #333;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #f8fafc;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: auto;
+  min-height: 90px;
+  width: 100%;
+}
+
+.text-white {
+  color: black;
+}
+
+
+/* Style the logo */
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 30px;
+  color: #fff;
+}
+
+/* Style the navigation links */
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: #cbd5e0;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #2d3748;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #1a202c;
+}
+
+.dark-mode .nav-links a {
+  color: #fff;
+}
+
+/* Light mode */
+.light-mode {
+  background-color: #f8fafc;
+  color: #6b7280;
+}
+
+.light-mode .navbar {
+  background-color: #fff;
+}
+
+.light-mode .nav-links a {
+  color: #6b7280;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .nav-links a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+}
